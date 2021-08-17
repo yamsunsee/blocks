@@ -19,7 +19,7 @@ ion-icon {
 }
 
 .title {
-    font-family: "title";
+    font-family: "Luckiest Guy", cursive;
     color: #fff;
     text-transform: uppercase;
     font-size: 4rem;
@@ -64,7 +64,7 @@ ion-icon {
         border-radius: 0.5rem;
         position: absolute;
         z-index: 2;
-        font-family: "number";
+        font-family: "Luckiest Guy", cursive;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -369,7 +369,7 @@ ion-icon {
     }
 
     .timerContainer {
-        font-family: "title";
+        font-family: "Luckiest Guy", cursive;
         position: absolute;
         padding: 1rem;
         background-color: #fff;
@@ -431,7 +431,7 @@ ion-icon {
                 }
 
                 &__value {
-                    font-family: "number";
+                    font-family: "Luckiest Guy", cursive;
                     font-size: 1.5rem;
                     color: #7f8c8d;
                     background-color: #ecf0f1;
@@ -523,7 +523,7 @@ ion-icon {
 
         .overlay {
             position: absolute;
-            font-family: "title";
+            font-family: "Luckiest Guy", cursive;
             top: 0;
             bottom: 0;
             left: 0;
@@ -600,7 +600,7 @@ ion-icon {
             }
 
             .recordContainer {
-                font-family: "number";
+                font-family: "Luckiest Guy", cursive;
                 font-size: 3rem;
                 text-transform: uppercase;
                 letter-spacing: 0.5rem;
@@ -706,7 +706,7 @@ ion-icon {
             }
 
             & > .number {
-                font-family: "number";
+                font-family: "Luckiest Guy", cursive;
                 position: absolute;
                 color: #7f8c8d;
                 background-color: #ecf0f1;
@@ -790,7 +790,7 @@ ion-icon {
 }
 
 .responsive {
-    font-family: "title";
+    font-family: "Luckiest Guy", cursive;
     display: none;
     flex-direction: column;
     justify-content: center;
