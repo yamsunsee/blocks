@@ -15,12 +15,12 @@ body {
 
 @font-face {
   font-family: "number";
-  src: url(./assets/fonts/Bjola_vie.otf);
+  src: url("https://github.com/Yamsunsee/Blocks/blob/main/assets/fonts/Bjola_vie.otf");
 }
 
 @font-face {
   font-family: "title";
-  src: url(./assets/fonts/Bondi.ttf);
+  src: url(/assets/fonts/Bondi.ttf);
 }
 
 body {
