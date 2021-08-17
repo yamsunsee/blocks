@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="./assets/images/favicon-48x48.PNG"
+            sizes="48x48"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="./assets/styles/main.css" />
+        <!-- Ion-icons -->
+        <!-- <ion-icon name="fish"></ion-icon> -->
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+        <title>Blocks</title>
+    </head>
+    <body>
+        <div class="title">Blocks</div>
+        <div class="responsive">
+            <ion-icon name="rainy"></ion-icon>
+            <div class="responsive__content">
+                Sorry! <br />
+                This screen size is not supported!
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="menuContainer">
+                <div class="menu">
+                    <div class="button playBtn">Play</div>
+                    <div class="button optionsBtn">Options</div>
+                    <div class="button tutorialBtn">How to play</div>
+                    <div class="button aboutBtn">About</div>
+                </div>
+                <div class="optionsContainer">
+                    <span>Options</span>
+                    <div class="sizeOption">
+                        <div>Size</div>
+                        <div class="sizeOption__item">
+                            <input
+                                type="range"
+                                name="size"
+                                id="size"
+                                min="5"
+                                max="10"
+                                value="5"
+                            />
+                            <div id="sizeValue">5 x 5</div>
+                        </div>
+                    </div>
+                    <div class="difficultyOption">
+                        <div>Difficulty</div>
+                        <div class="difficultyOption__item">
+                            <input
+                                type="range"
+                                name="difficulty"
+                                id="difficulty"
+                                min="1"
+                                max="3"
+                                value="1"
+                            />
+                            <div id="difficultyValue">Easy</div>
+                        </div>
+                    </div>
+                    <div class="button backToMenuBtn">Save & Back</div>
+                </div>
+                <div class="tutorialContainer">
+                    <span>How to play</span>
+                    <div class="tutorialContainer__content">
+                        Coming soon...
+                        <br />
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Optio fugit ad laboriosam modi, nulla rerum?
+                        Velit, unde. Quos, consequatur. Rem, officiis quisquam
+                        ab dolorem reiciendis maiores nostrum atque porro autem
+                        pariatur quis dolorum provident doloremque assumenda
+                        sit, nesciunt possimus aperiam vero sunt culpa
+                        cupiditate amet magnam. Ratione distinctio fuga tempore,
+                        debitis nostrum modi culpa nemo ab molestias, sequi
+                        incidunt. Odit sunt, asperiores ab ut corporis sint unde
+                        incidunt beatae natus mollitia maxime earum deserunt
+                        dolores veniam aliquam, expedita maiores. Odit illo
+                        totam culpa quis dolore molestiae quaerat beatae vitae
+                        omnis tempore perspiciatis aliquam minus, et eum atque.
+                        Illum, laboriosam atque.
+                        <br />
+                        I'm too lazy to explain how to play this game!
+                    </div>
+                    <div class="button backToMenuBtn">Ok</div>
+                </div>
+                <div class="aboutContainer">
+                    <span>About</span>
+                    <div class="aboutContainer__content">
+                        <div>This game is made by Yam</div>
+                        <div>August, 2021</div>
+                        <a
+                            href="https://www.facebook.com/phamthehien0410/"
+                            target="_blank"
+                            title="Feedback is welcome"
+                            class="aboutContainer__content--contact"
+                        >
+                            <div class="flipBox">
+                                <div class="flipBox__front">
+                                    <img
+                                        src="./assets/images/logo_480x480.png"
+                                        alt="logo"
+                                    />
+                                </div>
+                                <div class="flipBox__back">
+                                    <img
+                                        src="./assets/images/avatar_376x376.png"
+                                        alt="avatar"
+                                    />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="button backToMenuBtn">Back</div>
+                </div>
+            </div>
+            <div class="timerContainer">
+                <div class="timer">
+                    <ion-icon name="time"></ion-icon>
+                    <div class="timer__value">00:00:00</div>
+                </div>
+                <hr />
+                <div class="content">
+                    <div class="disableBlocks">
+                        <ion-icon name="close-circle"></ion-icon>
+                        x
+                        <div class="disableBlocks__value">0</div>
+                    </div>
+                    <div class="maxLevelBlock">
+                        <div class="maxLevelBlock__value">4</div>
+                    </div>
+                </div>
+                <hr />
+                <div class="tutor">
+                    <div class="tutor__up">
+                        <ion-icon name="arrow-up-circle"></ion-icon>
+                    </div>
+                    <div class="tutor__down">
+                        <ion-icon name="arrow-down-circle"></ion-icon>
+                    </div>
+                    <div class="tutor__back">
+                        <ion-icon name="arrow-back-circle"></ion-icon>
+                    </div>
+                    <div class="tutor__forward">
+                        <ion-icon name="arrow-forward-circle"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="overlay hidden">
+                    <div class="pauseContainer">
+                        <div class="text">Pause</div>
+                        <div class="loader">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="recordContainer hidden">
+                        <div class="recordContainer__icon"></div>
+                        <span class="recordContainer__title"></span>
+                        <div class="recordContainer__content">
+                            <div class="recordContainer__size">
+                                <span>Size</span>
+                                <div class="recordContainer__sizeValue">
+                                    5x5
+                                </div>
+                            </div>
+                            <div class="recordContainer__difficulty">
+                                <span>Difficulty</span>
+                                <div class="recordContainer__difficultyValue">
+                                    Easy
+                                </div>
+                            </div>
+                            <div class="recordContainer__time">
+                                <span>Time</span>
+                                <div class="recordContainer__timeValue">
+                                    00:00:00
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button playAgainBtn">Play again!</div>
+                    </div>
+                </div>
+            </div>
+            <div class="taskbar">
+                <div class="taskbar__control">
+                    <div class="home" title="Restart">
+                        <ion-icon name="home"></ion-icon>
+                    </div>
+                    <div class="state" title="Play/Pause">
+                        <ion-icon class="play" name="play"></ion-icon>
+                        <ion-icon class="pause hidden" name="pause"></ion-icon>
+                    </div>
+                    <div class="volume" title="Sound/Mute">
+                        <ion-icon class="on" name="volume-high"></ion-icon>
+                        <ion-icon
+                            class="off hidden"
+                            name="volume-mute"
+                        ></ion-icon>
+                    </div>
+                    <a
+                        href="https://www.facebook.com/phamthehien0410/"
+                        target="_blank"
+                        title="Feedback is welcome"
+                        ><ion-icon name="share-social"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script src="./assets/scripts/variables.js"></script>
+        <script src="./assets/scripts/functions.js"></script>
+        <script src="./assets/scripts/main.js"></script>
+    </body>
+</html>
