@@ -358,6 +358,11 @@ function checkWin() {
         recordContainer.className = "recordContainer win";
         recordContainerIcon.innerHTML = `<ion-icon name="trophy"></ion-icon>`;
         recordContainerTitle.innerHTML = "You win!";
+        recordContainerSizeValue.innerHTML = `${size}x${size}`;
+        recordContainerDifficultyValue.innerHTML = ["Easy", "Medium", "Hard"][
+            parseInt(difficultyOption.value) - 1
+        ];
+        recordContainerTimeValue.innerHTML = timer.innerHTML;
         overlay.classList.toggle("hidden");
         playAgainBtn.onclick = function () {
             window.location.reload();
