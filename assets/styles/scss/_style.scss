@@ -269,7 +269,7 @@ ion-icon {
             width: 26rem;
             height: 26rem;
             padding: 3rem 2rem;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             color: #7f8c8d;
             background-color: #fff;
             border-radius: 1rem;
@@ -278,6 +278,7 @@ ion-icon {
             text-transform: uppercase;
 
             &__content {
+                color: rgba($color: #7f8c8d, $alpha: 0.6);
                 overflow-y: auto;
 
                 &::-webkit-scrollbar {
@@ -293,9 +294,29 @@ ion-icon {
                     background-color: #7f8c8d;
                     border-radius: 1rem;
                 }
+
+                div:not(:last-child) {
+                    margin-bottom: 1rem;
+                }
+
+                span.question {
+                    color: #7f8c8d;
+                }
+
+                span.disable {
+                    color: #eb4d4b;
+                }
+
+                span.empty {
+                    color: #6ab04c;
+                }
+
+                span.active {
+                    color: #e67e22;
+                }
             }
 
-            span {
+            span.heading {
                 color: #686de0;
                 font-size: 3rem;
                 margin-bottom: 1rem;

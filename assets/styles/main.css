@@ -278,7 +278,7 @@ ion-icon:before {
   width: 26rem;
   height: 26rem;
   padding: 3rem 2rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: #7f8c8d;
   background-color: #fff;
   border-radius: 1rem;
@@ -287,6 +287,7 @@ ion-icon:before {
 }
 
 .wrapper .menuContainer .tutorialContainer__content {
+  color: rgba(127, 140, 141, 0.6);
   overflow-y: auto;
 }
 
@@ -304,7 +305,27 @@ ion-icon:before {
   border-radius: 1rem;
 }
 
-.wrapper .menuContainer .tutorialContainer span {
+.wrapper .menuContainer .tutorialContainer__content div:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.wrapper .menuContainer .tutorialContainer__content span.question {
+  color: #7f8c8d;
+}
+
+.wrapper .menuContainer .tutorialContainer__content span.disable {
+  color: #eb4d4b;
+}
+
+.wrapper .menuContainer .tutorialContainer__content span.empty {
+  color: #6ab04c;
+}
+
+.wrapper .menuContainer .tutorialContainer__content span.active {
+  color: #e67e22;
+}
+
+.wrapper .menuContainer .tutorialContainer span.heading {
   color: #686de0;
   font-size: 3rem;
   margin-bottom: 1rem;
